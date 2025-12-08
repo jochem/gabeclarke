@@ -1,0 +1,17 @@
+{
+  "name": "webflow-template-local",
+  "version": "1.0.0",
+  "description": "Local development environment for exported Webflow template",
+  "scripts": {
+    "serve": "npx serve .",
+    "dev": "npx http-server . -p 8000 -o"
+  },
+  "keywords": [
+    "webflow",
+    "template",
+    "local-development"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+

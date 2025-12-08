@@ -1,0 +1,606 @@
+{
+  "comparison_date": "1765153754.071621",
+  "gabe_clarke": {
+    "total_files": 31,
+    "html_files": 30,
+    "assets": {
+      "total_files": 266,
+      "total_size": 58855180,
+      "by_type": {
+        ".jpg": 164,
+        ".jpeg": 92,
+        ".js": 9,
+        ".css": 1
+      },
+      "by_size": {
+        "100KB-1MB": 126,
+        "1-100KB": 129,
+        ">1MB": 11
+      }
+    }
+  },
+  "original": {
+    "total_files": 31,
+    "html_files": 30,
+    "assets": {
+      "total_files": 123,
+      "total_size": 13370465,
+      "by_type": {
+        ".js": 3,
+        ".jpeg": 96,
+        ".jpg": 23,
+        ".css": 1
+      },
+      "by_size": {
+        "1-100KB": 66,
+        "100KB-1MB": 57
+      }
+    }
+  },
+  "differences": {
+    "common_files": 30,
+    "identical_files": 1,
+    "different_files": 29,
+    "only_gabe": [
+      "home/old-home.html"
+    ],
+    "only_original": [
+      "home/home-1.html"
+    ],
+    "html_differences": [
+      {
+        "file": "about/about-1.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19405,
+          "unique_words_gabe": 3,
+          "unique_words_original": 28,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "usd",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e"
+          ]
+        }
+      },
+      {
+        "file": "about/about-2.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -15522,
+          "unique_words_gabe": 345,
+          "unique_words_original": 80,
+          "sample_unique_gabe": [
+            "peter",
+            "\u200d",
+            "sung",
+            "naxos",
+            "repertoire,",
+            "saint-saens&#x27;",
+            "ettlingen",
+            "an",
+            "turmoil",
+            "l\u00fcbeck."
+          ],
+          "sample_unique_original": [
+            "your",
+            "remove",
+            "sit",
+            "mi",
+            "suspendisse",
+            "amet,",
+            "available",
+            "lorem",
+            "dolor",
+            "diam"
+          ]
+        }
+      },
+      {
+        "file": "about/about-3.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19189,
+          "unique_words_gabe": 3,
+          "unique_words_original": 27,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "this",
+            "remove",
+            "no",
+            "usd",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "category/ceramic.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19223,
+          "unique_words_gabe": 3,
+          "unique_words_original": 29,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "category/figurines.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19241,
+          "unique_words_gabe": 3,
+          "unique_words_original": 29,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "category/mockups.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19233,
+          "unique_words_gabe": 3,
+          "unique_words_original": 29,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "category/prints.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19229,
+          "unique_words_gabe": 3,
+          "unique_words_original": 29,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "checkout.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19163,
+          "unique_words_gabe": 3,
+          "unique_words_original": 15,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "this",
+            "close",
+            "is",
+            "not",
+            "designer",
+            "quantity.",
+            "product",
+            "%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e",
+            "found."
+          ]
+        }
+      },
+      {
+        "file": "contact/contact-1.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19360,
+          "unique_words_gabe": 6,
+          "unique_words_original": 30,
+          "sample_unique_gabe": [
+            "@gabe.clarke",
+            "tiktok/",
+            "@gabeclarketenor",
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "this",
+            "remove",
+            "no",
+            "usd",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "contact/contact-2.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19347,
+          "unique_words_gabe": 3,
+          "unique_words_original": 29,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "usd",
+            "continue",
+            "pay",
+            "checkout",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "contact/contact-3.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19347,
+          "unique_words_gabe": 3,
+          "unique_words_original": 30,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "this",
+            "remove",
+            "no",
+            "usd",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "home/home-2.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19594,
+          "unique_words_gabe": 20,
+          "unique_words_original": 40,
+          "sample_unique_gabe": [
+            "tenor",
+            "rolando",
+            "bellini",
+            "villaz\u00f3n",
+            "gabe",
+            "die",
+            "russell",
+            "hepplewhite",
+            "johan",
+            "vincenzo"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "essential",
+            "bring",
+            "remove",
+            "no",
+            "usd",
+            "wear",
+            "continue",
+            "pay"
+          ]
+        }
+      },
+      {
+        "file": "home/home-3.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19263,
+          "unique_words_gabe": 3,
+          "unique_words_original": 31,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "usd",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e"
+          ]
+        }
+      },
+      {
+        "file": "index.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -15575,
+          "unique_words_gabe": 197,
+          "unique_words_original": 54,
+          "sample_unique_gabe": [
+            "highlight",
+            "terra.",
+            "der",
+            "a/",
+            "prints",
+            "rotatez(0)",
+            "p/",
+            "repertoire,",
+            "clarke\u2019s",
+            "cisco,"
+          ],
+          "sample_unique_original": [
+            "category",
+            "designer,",
+            "creative",
+            "detail",
+            "work",
+            "remove",
+            "artist,",
+            "no",
+            "continue",
+            "usd"
+          ]
+        }
+      },
+      {
+        "file": "pages/shop.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19711,
+          "unique_words_gabe": 3,
+          "unique_words_original": 29,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "this",
+            "remove",
+            "no",
+            "continue",
+            "pay",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "available"
+          ]
+        }
+      },
+      {
+        "file": "pages/works.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19926,
+          "unique_words_gabe": 20,
+          "unique_words_original": 50,
+          "sample_unique_gabe": [
+            "tenor",
+            "rolando",
+            "bellini",
+            "villaz\u00f3n",
+            "gabe",
+            "die",
+            "russell",
+            "hepplewhite",
+            "johan",
+            "vincenzo"
+          ],
+          "sample_unique_original": [
+            "your",
+            "say",
+            "motion",
+            "this",
+            "essential",
+            "bring",
+            "colors",
+            "remove",
+            "no",
+            "wear"
+          ]
+        }
+      },
+      {
+        "file": "product/fantastic-steel-cheese.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19182,
+          "unique_words_gabe": 4,
+          "unique_words_original": 20,
+          "sample_unique_gabe": [
+            "tenor",
+            "%3cdiv%20role%3d%22listitem%22%20class%3d%22w-dyn-item%20w-dyn-repeater-item%22%3e%3cimg%20alt%3d%22%22%20loading%3d%22lazy%22%20data-wf-sku-bindings%3d%22%255b%257b%2522from%2522%253a%2522f_more_images_4dr%255b%255d%2522%252c%2522to%2522%253a%2522src%2522%257d%255d%22%20src%3d%22https%3a%2f%2fcdn.prod.website-files.com%2f670903a26ae4eb4eb6eb920a%2f670903a26ae4eb4eb6eb9329_pexels-photo-8534045.jpeg%22%2f%3e%3c%2fdiv%3e",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "remove",
+            "pay",
+            "continue",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "0.00",
+            "subtotal",
+            "with"
+          ]
+        }
+      },
+      {
+        "file": "product/generic-cotton-cheese.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19178,
+          "unique_words_gabe": 3,
+          "unique_words_original": 19,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "remove",
+            "pay",
+            "continue",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "0.00",
+            "subtotal",
+            "with"
+          ]
+        }
+      },
+      {
+        "file": "product/practical-metal-table.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19178,
+          "unique_words_gabe": 4,
+          "unique_words_original": 20,
+          "sample_unique_gabe": [
+            "%3cdiv%20role%3d%22listitem%22%20class%3d%22w-dyn-item%20w-dyn-repeater-item%22%3e%3cimg%20alt%3d%22%22%20loading%3d%22lazy%22%20data-wf-sku-bindings%3d%22%255b%257b%2522from%2522%253a%2522f_more_images_4dr%255b%255d%2522%252c%2522to%2522%253a%2522src%2522%257d%255d%22%20src%3d%22https%3a%2f%2fcdn.prod.website-files.com%2f670903a26ae4eb4eb6eb920a%2f670903a26ae4eb4eb6eb932a_pexels-photo-8534229.jpeg%22%2f%3e%3c%2fdiv%3e",
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "remove",
+            "pay",
+            "continue",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "0.00",
+            "subtotal",
+            "with"
+          ]
+        }
+      },
+      {
+        "file": "product/rustic-frozen-gloves.html",
+        "diff": {
+          "identical": false,
+          "size_diff": -19174,
+          "unique_words_gabe": 3,
+          "unique_words_original": 19,
+          "sample_unique_gabe": [
+            "tenor",
+            "gabe",
+            "clarke"
+          ],
+          "sample_unique_original": [
+            "your",
+            "remove",
+            "pay",
+            "continue",
+            "checkout",
+            "to",
+            "%3cdiv%20class%3d%22w-commerce-commercecartitem%22%3e%3cimg%20data-wf-bindings%3d%22%255b%257b%2522src%2522%253a%257b%2522type%2522%253a%2522imageref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_main_image_4dr%2522%257d%257d%255d%22%20src%3d%22%22%20alt%3d%22%22%20class%3d%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2f%3e%3cdiv%20class%3d%22w-commerce-commercecartiteminfo%22%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_name_%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3e%3c%2fdiv%3e%3cdiv%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commerceprice%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522price%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.price%2522%257d%257d%255d%22%3e%24%c2%a00.00%c2%a0usd%3c%2fdiv%3e%3cscript%20type%3d%22text%2fx-wf-template%22%20id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%253cli%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522plaintext%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d.name%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253cspan%253e%253a%2520%253c%252fspan%253e%253cspan%2520data-wf-bindings%253d%2522%25255b%25257b%252522innerhtml%252522%25253a%25257b%252522type%252522%25253a%252522commercepropvalues%252522%25252c%252522filter%252522%25253a%25257b%252522type%252522%25253a%252522identity%252522%25252c%252522params%252522%25253a%25255b%25255d%25257d%25252c%252522datapath%252522%25253a%252522database.commerceorder.useritems%25255b%25255d.product.f_sku_properties_3dr%25255b%25255d%252522%25257d%25257d%25255d%2522%2520class%253d%2522w-dyn-bind-empty%2522%253e%253c%252fspan%253e%253c%252fli%253e%3c%2fscript%3e%3cul%20data-wf-bindings%3d%22%255b%257b%2522optionsets%2522%253a%257b%2522type%2522%253a%2522commerceproptable%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%5b%5d%2522%257d%257d%252c%257b%2522optionvalues%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.f_sku_values_3dr%2522%257d%257d%255d%22%20class%3d%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3d%22database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%22%20data-wf-template-id%3d%22wf-template-61741727-a985-f89d-69bc-5bfae82bc7c7%22%3e%3cli%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522plaintext%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d.name%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3cspan%3e%3a%20%3c%2fspan%3e%3cspan%20data-wf-bindings%3d%22%255b%257b%2522innerhtml%2522%253a%257b%2522type%2522%253a%2522commercepropvalues%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.product.f_sku_properties_3dr%255b%255d%2522%257d%257d%255d%22%20class%3d%22w-dyn-bind-empty%22%3e%3c%2fspan%3e%3c%2fli%3e%3c%2ful%3e%3ca%20href%3d%22%23%22%20role%3d%22%22%20data-wf-bindings%3d%22%255b%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20class%3d%22w-inline-block%22%20data-wf-cart-action%3d%22remove-item%22%20data-commerce-sku-id%3d%22%22%20aria-label%3d%22remove%20item%20from%20cart%22%3e%3cdiv%3eremove%3c%2fdiv%3e%3c%2fa%3e%3c%2fdiv%3e%3cinput%20data-wf-bindings%3d%22%255b%257b%2522value%2522%253a%257b%2522type%2522%253a%2522number%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522numberprecision%2522%252c%2522params%2522%253a%255b%25220%2522%252c%2522numberprecision%2522%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.count%2522%257d%257d%252c%257b%2522data-commerce-sku-id%2522%253a%257b%2522type%2522%253a%2522itemref%2522%252c%2522filter%2522%253a%257b%2522type%2522%253a%2522identity%2522%252c%2522params%2522%253a%255b%255d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d.sku.id%2522%257d%257d%255d%22%20data-wf-conditions%3d%22%257b%2522condition%2522%253a%257b%2522fields%2522%253a%257b%2522product%253aec-product-type%2522%253a%257b%2522ne%2522%253a%2522e348fd487d0102946c9179d2a94bb613%2522%252c%2522type%2522%253a%2522option%2522%257d%257d%257d%252c%2522datapath%2522%253a%2522database.commerceorder.useritems%255b%255d%2522%257d%22%20class%3d%22w-commerce-commercecartquantity%20cart-quantity%22%20required%3d%22%22%20pattern%3d%22%5e%5b0-9%5d%2b%24%22%20inputmode%3d%22numeric%22%20type%3d%22number%22%20name%3d%22quantity%22%20autocomplete%3d%22off%22%20data-wf-cart-action%3d%22update-item-quantity%22%20data-commerce-sku-id%3d%22%22%20value%3d%221%22%2f%3e%3c%2fdiv%3e",
+            "0.00",
+            "subtotal",
+            "with"
+          ]
+        }
+      }
+    ]
+  }
+}
