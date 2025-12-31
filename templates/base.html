@@ -43,6 +43,26 @@ body
 ;
   </style>
   <script type="text/javascript">
+    // Prevent Webflow badge from being created
+    (function() {
+      var originalAppendChild = Element.prototype.appendChild;
+      Element.prototype.appendChild = function(child) {
+        if (child && child.classList && child.classList.contains('w-webflow-badge')) {
+          return child;
+        }
+        return originalAppendChild.call(this, child);
+      };
+      
+      var originalInsertBefore = Element.prototype.insertBefore;
+      Element.prototype.insertBefore = function(newNode, referenceNode) {
+        if (newNode && newNode.classList && newNode.classList.contains('w-webflow-badge')) {
+          return newNode;
+        }
+        return originalInsertBefore.call(this, newNode, referenceNode);
+      };
+    })();
+  </script>
+  <script type="text/javascript">
 {% raw %}
 window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};
 {% endraw %}
