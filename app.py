@@ -74,7 +74,12 @@ def get_page_metadata(template_path):
 # Calculate asset path based on request path depth
 def get_asset_path(request_path):
     """Calculate the relative asset path based on the request path depth."""
-    depth = request_path.strip('/').count('/')
+    # Remove leading and trailing slashes, then count remaining slashes
+    path = request_path.strip('/')
+    if not path:
+        return ''
+    # Depth is number of slashes + 1 (for the path segments)
+    depth = path.count('/') + 1 if path else 0
     if depth == 0:
         return ''
     return '../' * depth
@@ -88,6 +93,7 @@ def inject_asset_path():
     return dict(asset_path=asset_path_func())
 
 @app.route('/')
+@app.route('/index.html')
 def index():
     """Home page."""
     meta = get_page_metadata('index.html')
@@ -109,6 +115,18 @@ def about(num):
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
+@app.route('/contact/')
+@app.route('/contact')
+def contact_hybrid():
+    """Hybrid contact page combining contact form and info."""
+    meta = get_page_metadata('contact/contact-1.html')
+    return render_template('contact/contact-hybrid.html',
+                         page_id=meta['page_id'],
+                         title='Contact • Gabe Clarke',
+                         description=meta['description'],
+                         layout_opacity=meta['layout_opacity'],
+                         preloader=meta['preloader'])
+
 @app.route('/contact/contact-<int:num>.html')
 def contact(num):
     """Contact pages."""
@@ -120,9 +138,66 @@ def contact(num):
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
+@app.route('/biography/')
+@app.route('/biography')
+def biography():
+    """Biography page."""
+    meta = get_page_metadata('about/about-2.html')
+    return render_template('biography.html',
+                         page_id=meta['page_id'],
+                         title='Biography • Gabe Clarke',
+                         description=meta['description'],
+                         layout_opacity=meta['layout_opacity'],
+                         preloader=meta['preloader'])
+
+@app.route('/biography.html')
+def biography_legacy():
+    """Legacy biography URL - redirect to new URL."""
+    from flask import redirect
+    return redirect('/biography/', code=301)
+
+@app.route('/media/')
+@app.route('/media')
+def media():
+    """Media page."""
+    meta = get_page_metadata('pages/media.html')
+    return render_template('pages/media.html',
+                         page_id=meta['page_id'],
+                         title='Media • Gabe Clarke',
+                         description='Audio, video, and performance media by tenor Gabe Clarke.',
+                         layout_opacity=meta['layout_opacity'],
+                         preloader=meta['preloader'])
+
+@app.route('/press/')
+@app.route('/press')
+def press():
+    """Press & Reviews page."""
+    meta = get_page_metadata('contact/contact-1.html')  # Use contact metadata as fallback
+    return render_template('pages/press.html',
+                         page_id=meta['page_id'],
+                         title='Press & Reviews • Gabe Clarke',
+                         description='Press reviews and critical acclaim for tenor Gabe Clarke.',
+                         layout_opacity=meta['layout_opacity'],
+                         preloader=meta['preloader'])
+
 @app.route('/pages/<path:filename>')
 def pages(filename):
-    """Pages like shop.html, works.html."""
+    """Pages like shop.html, works.html, press.html."""
+    # Redirect works.html to /works/
+    if filename == 'works.html':
+        from flask import redirect
+        return redirect('/works/', code=301)
+    
+    # Redirect media.html to /media/
+    if filename == 'media.html':
+        from flask import redirect
+        return redirect('/media/', code=301)
+    
+    # Redirect press.html to /press/
+    if filename == 'press.html':
+        from flask import redirect
+        return redirect('/press/', code=301)
+    
     meta = get_page_metadata(f'pages/{filename}')
     return render_template(f'pages/{filename}',
                          page_id=meta['page_id'],
@@ -155,12 +230,79 @@ def product(filename):
 
 @app.route('/project/<path:filename>')
 def project(filename):
-    """Project pages."""
+    """Project pages (legacy - redirects to works)."""
+    # Map old project filenames to new works URLs
+    project_map = {
+        'bring-back-to-colors.html': 'the-crash',
+        'dreaming-about-light.html': 'la-sonnambula',
+        'essential-wear.html': 'die-fledermaus',
+        'say-exotique.html': 'masterclass-rolando-villazon'
+    }
+    
+    if filename in project_map:
+        from flask import redirect, url_for
+        return redirect(f'/works/{project_map[filename]}/', code=301)
+    
+    # Fallback for other project pages
     meta = get_page_metadata(f'project/{filename}')
     return render_template(f'project/{filename}',
                          page_id=meta['page_id'],
                          title=meta['title'],
                          description=meta['description'],
+                         layout_opacity=meta['layout_opacity'],
+                         preloader=meta['preloader'])
+
+@app.route('/works/')
+@app.route('/works')
+def works_index():
+    """Works listing page."""
+    meta = get_page_metadata('pages/works.html')
+    return render_template('pages/works.html',
+                         page_id=meta['page_id'],
+                         title='Works • Gabe Clarke',
+                         description='Selected works and performances by tenor Gabe Clarke.',
+                         layout_opacity=meta['layout_opacity'],
+                         preloader=meta['preloader'])
+
+@app.route('/works/<opera_slug>/')
+@app.route('/works/<opera_slug>')
+def work_detail(opera_slug):
+    """Individual work/performance pages."""
+    # Map opera slugs to template files
+    works_map = {
+        'the-crash': {
+            'template': 'project/bring-back-to-colors.html',
+            'title': 'The Crash • Gabe Clarke',
+            'description': 'Gabe Clarke in Russell Hepplewhite\'s "The Crash" at Oldenburgisches Staatstheater.'
+        },
+        'la-sonnambula': {
+            'template': 'project/dreaming-about-light.html',
+            'title': 'La Sonnambula • Gabe Clarke',
+            'description': 'Gabe Clarke as Elvino in Bellini\'s "La Sonnambula" with Ópera de la vera.'
+        },
+        'die-fledermaus': {
+            'template': 'project/essential-wear.html',
+            'title': 'Die Fledermaus • Gabe Clarke',
+            'description': 'Gabe Clarke in Johann Strauss\'s "Die Fledermaus" with Dutch National Opera Academy.'
+        },
+        'masterclass-rolando-villazon': {
+            'template': 'project/say-exotique.html',
+            'title': 'Masterclass: Rolando Villazón • Gabe Clarke',
+            'description': 'Gabe Clarke in masterclass with Rolando Villazón.'
+        }
+    }
+    
+    if opera_slug not in works_map:
+        from flask import abort
+        abort(404)
+    
+    work_info = works_map[opera_slug]
+    meta = get_page_metadata(work_info['template'].replace('project/', 'project/'))
+    
+    return render_template(work_info['template'],
+                         page_id=meta['page_id'],
+                         title=work_info['title'],
+                         description=work_info['description'],
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
@@ -201,7 +343,16 @@ def checkout():
 @app.route('/assets/<path:filename>')
 def assets(filename):
     """Serve asset files."""
-    return send_from_directory('assets', filename)
+    # Flask automatically URL-decodes path parameters, but we need to handle
+    # the case where the filename contains spaces that were URL-encoded
+    from urllib.parse import unquote
+    decoded_filename = unquote(filename)
+    return send_from_directory('assets', decoded_filename)
+
+@app.route('/favicon.ico')
+def favicon():
+    """Serve favicon."""
+    return send_from_directory('.', 'favicon.ico') if os.path.isfile('favicon.ico') else ('', 204)
 
 @app.route('/<path:filename>')
 def static_files(filename):
@@ -211,5 +362,5 @@ def static_files(filename):
     return f"File not found: {filename}", 404
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5001)
 
