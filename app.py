@@ -356,6 +356,24 @@ def assets(filename):
     decoded_filename = unquote(filename)
     return send_from_directory('assets', decoded_filename)
 
+# Serve media files (production images)
+@app.route('/media/<path:filename>')
+def media(filename):
+    """Serve media files (production images)."""
+    from urllib.parse import unquote
+    # Flask's <path:filename> already URL-decodes, but we need to handle nested paths
+    # The filename will be like "die-fledermaus/filename with spaces.jpg"
+    parts = filename.split('/', 1)
+    if len(parts) == 2:
+        production_folder, actual_filename = parts
+        # URL-decode the actual filename in case it has encoded spaces
+        decoded_filename = unquote(actual_filename)
+        return send_from_directory(f'media/{production_folder}', decoded_filename)
+    else:
+        # Fallback: try to find the file in any media subdirectory
+        decoded_filename = unquote(filename)
+        return send_from_directory('media', decoded_filename)
+
 @app.route('/favicon.ico')
 def favicon():
     """Serve favicon."""
