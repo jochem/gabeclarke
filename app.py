@@ -156,17 +156,24 @@ def biography_legacy():
     from flask import redirect
     return redirect('/biography/', code=301)
 
-@app.route('/media/')
-@app.route('/media')
-def media():
-    """Media page."""
-    meta = get_page_metadata('pages/media.html')
-    return render_template('pages/media.html',
+@app.route('/repertoire/')
+@app.route('/repertoire')
+def repertoire():
+    """Repertoire page."""
+    meta = get_page_metadata('contact/contact-1.html')  # Use contact metadata as fallback
+    return render_template('pages/repertoire.html',
                          page_id=meta['page_id'],
-                         title='Media • Gabe Clarke',
-                         description='Audio, video, and performance media by tenor Gabe Clarke.',
+                         title='Repertoire • Gabe Clarke',
+                         description='Complete repertoire of roles and works performed by tenor Gabe Clarke.',
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
+
+@app.route('/media/')
+@app.route('/media')
+def media_legacy():
+    """Legacy media URL - redirect to works."""
+    from flask import redirect
+    return redirect('/works/', code=301)
 
 @app.route('/press/')
 @app.route('/press')
@@ -188,10 +195,10 @@ def pages(filename):
         from flask import redirect
         return redirect('/works/', code=301)
     
-    # Redirect media.html to /media/
+    # Redirect media.html to /works/ (media now integrated into works)
     if filename == 'media.html':
         from flask import redirect
-        return redirect('/media/', code=301)
+        return redirect('/works/', code=301)
     
     # Redirect press.html to /press/
     if filename == 'press.html':
