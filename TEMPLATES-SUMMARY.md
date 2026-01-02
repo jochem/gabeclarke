@@ -85,4 +85,3 @@ The **Original template** includes:
 4. **Merge changes** - Take elements from original if needed
 
 Both templates are ready to use! 🎉
-

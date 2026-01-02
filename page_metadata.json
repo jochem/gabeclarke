@@ -1,0 +1,219 @@
+{
+  "index.html": {
+    "title": "Home #1 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91ff",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "checkout.html": {
+    "title": "Checkout \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f3",
+    "layout_opacity": null,
+    "preloader": false
+  },
+  "home/old-home.html": {
+    "title": "Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91e2",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "home/home-1.html": {
+    "title": "Home #1 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "61f7b3c954f03bb45094a4bd",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "home/home-3.html": {
+    "title": "Home #3 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb9201",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "home/home-2.html": {
+    "title": "Home #2 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb9200",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "contact/contact-3.html": {
+    "title": "Contact #3 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f8",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "contact/contact-2.html": {
+    "title": "Contact #2 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f7",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "contact/contact-1.html": {
+    "title": "Contact #1 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f5",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "category/mockups.html": {
+    "title": "Mockups \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f9",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "category/figurines.html": {
+    "title": "Figurines \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f9",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "category/ceramic.html": {
+    "title": "Ceramic \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f9",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "category/prints.html": {
+    "title": "Prints \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f9",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "template-settings/licensing.html": {
+    "title": "Licensing \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb9203",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "template-settings/changelog.html": {
+    "title": "Changelog \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f2",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "template-settings/style-guide.html": {
+    "title": "Style Guide \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb924a",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "template-settings/instructions.html": {
+    "title": "Instructions \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb9202",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "about/about-1.html": {
+    "title": "About #1 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91ef",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "about/about-2.html": {
+    "title": "About #2 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f0",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "about/about-3.html": {
+    "title": "About #3 \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91f1",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "product/rustic-frozen-gloves.html": {
+    "title": "Advanced \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fa",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "product/fantastic-steel-cheese.html": {
+    "title": "Advanced \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fa",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "product/rustic-plastic-pizza.html": {
+    "title": "Advanced \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fa",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "product/generic-cotton-cheese.html": {
+    "title": "Advanced \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fa",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "product/practical-metal-table.html": {
+    "title": "Advanced \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fa",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "project/essential-wear.html": {
+    "title": "DIe Fledermaus \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fb",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "project/bring-back-to-colors.html": {
+    "title": "The Crash \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fb",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "project/say-exotique.html": {
+    "title": "Masterclass: Rolando Villaz\u00f3n \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fb",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "project/dreaming-about-light.html": {
+    "title": "La Sonnambula \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb91fb",
+    "layout_opacity": true,
+    "preloader": true
+  },
+  "pages/shop.html": {
+    "title": "Shop \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb9249",
+    "layout_opacity": false,
+    "preloader": false
+  },
+  "pages/works.html": {
+    "title": "Works \u2022 Ofelia \u2013 Webflow Ecommerce website template",
+    "description": "Ofelia is a template made for every artist, designer, and creative alike. Showcase your portfolio and art shop, it is filled versatile elements and layouts.",
+    "page_id": "670903a26ae4eb4eb6eb9250",
+    "layout_opacity": true,
+    "preloader": true
+  }
+}

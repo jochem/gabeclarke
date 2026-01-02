@@ -87,4 +87,3 @@ echo "For a fully offline version, you may need to:"
 echo "  1. Download remaining assets manually"
 echo "  2. Update file paths in HTML files"
 echo "  3. Or use HTTrack for a more complete download"
-

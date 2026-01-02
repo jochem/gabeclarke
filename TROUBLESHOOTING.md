@@ -53,4 +53,3 @@ The file is definitely there and the path in HTML is correct. If it's still not 
 3. **Try a different server** (e.g., `npx serve webflow-site`)
 
 The image should work - it's likely a server configuration issue rather than a missing file.
-

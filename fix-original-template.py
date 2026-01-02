@@ -51,4 +51,3 @@ result = subprocess.run(['python3', 'fix-all-url-encoding.py'],
 print(result.stdout)
 
 print("\n✅ Original template is ready!")
-

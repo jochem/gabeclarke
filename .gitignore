@@ -1,25 +1,40 @@
-# Webflow Export
-# Add any files you don't want to track
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
 
-# OS files
-.DS_Store
-Thumbs.db
+# Flask
+instance/
+.webassets-cache
 
-# Editor files
+# Docker
+.dockerignore
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
+# OS
+.DS_Store
+Thumbs.db
+
 # Logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Dependencies (if you add any)
-node_modules/
-package-lock.json
-
-
-# Python scripts used for cleanup
-*.py
+# Database
+*.db
+*.sqlite
+*.sqlite3
+node_modules

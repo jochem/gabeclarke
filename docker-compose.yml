@@ -1,0 +1,29 @@
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile.flask
+    platform: linux/amd64
+    container_name: gabeclarke-flask
+    restart: unless-stopped
+    environment:
+      FLASK_ENV: development
+    volumes:
+      - .:/app
+      - ./templates:/app/templates
+      - ./assets:/app/assets
+    ports:
+      - "5000:5000"
+    networks:
+      - gabeclarke-network
+
+networks:
+  gabeclarke-network:
+    name: gabeclarke-network
+    driver: bridge
+
+
+
+
+
+

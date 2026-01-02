@@ -38,4 +38,3 @@ console.log('For a complete download, we recommend using one of these methods:')
 console.log('1. Browser extension (see README.md)');
 console.log('2. HTTrack Website Copier (free GUI tool)');
 console.log('3. wget command: wget --mirror --convert-links --adjust-extension --page-requisites --no-parent <url>');
-

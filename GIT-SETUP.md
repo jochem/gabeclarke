@@ -80,4 +80,3 @@ git checkout main
 4. **Push to remote**: `git remote add origin <url> && git push`
 
 You now have the complete version history that Webflow couldn't provide! 🚀
-

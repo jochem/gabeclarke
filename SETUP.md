@@ -64,4 +64,3 @@ webflow-site/
 - Start editing HTML/CSS/JS locally
 - Test your changes
 - Consider setting up Git for version control: `git init`
-

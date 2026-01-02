@@ -44,4 +44,3 @@ Your site is running on `http://localhost:8123`
 🎉 **Everything should now work correctly!**
 
 All images should load, all paths are correct, and the site is fully functional offline.
-

@@ -140,4 +140,3 @@ def format_all_html(directory='.'):
 if __name__ == '__main__':
     directory = sys.argv[1] if len(sys.argv) > 1 else '.'
     format_all_html(directory)
-

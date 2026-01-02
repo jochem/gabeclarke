@@ -89,4 +89,3 @@ else
     echo "Please check the URL and try again"
     exit 1
 fi
-

@@ -103,4 +103,3 @@ def fix_all_html(directory='.'):
 if __name__ == '__main__':
     directory = sys.argv[1] if len(sys.argv) > 1 else '.'
     fix_all_html(directory)
-
