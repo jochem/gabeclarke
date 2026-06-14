@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://webflow.com -->
-<!-- Last Published: Sun Dec 07 2025 23:47:24 GMT+0000 (Coordinated Universal Time) -->
-
-<html data-wf-domain="gabe-clarke.webflow.io" data-wf-page="{{ page_id }}" data-wf-site="670903a26ae4eb4eb6eb91a2" lang="en">
+<html lang="en" data-wf-page="{{ page_id }}">
 <head>
   <meta charset="utf-8">
 
@@ -29,7 +26,6 @@
   <meta content="Gabe Clarke, tenor, tenore di grazia, opera singer, bel canto, Rossini, Bellini, Mozart, Dutch-American tenor" name="keywords">
   <meta content="#26262d" name="theme-color">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
   <link href="{{ asset_path }}assets/css/gabe-clarke.webflow.shared.6c3ea3014.css" rel="stylesheet" type="text/css">
   {% if page_styles %}
   <style type="text/css">
@@ -58,31 +54,6 @@ body
 }
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   </style>
-  <script type="text/javascript">
-    // Prevent Webflow badge from being created
-    (function() {
-      var originalAppendChild = Element.prototype.appendChild;
-      Element.prototype.appendChild = function(child) {
-        if (child && child.classList && child.classList.contains('w-webflow-badge')) {
-          return child;
-        }
-        return originalAppendChild.call(this, child);
-      };
-      
-      var originalInsertBefore = Element.prototype.insertBefore;
-      Element.prototype.insertBefore = function(newNode, referenceNode) {
-        if (newNode && newNode.classList && newNode.classList.contains('w-webflow-badge')) {
-          return newNode;
-        }
-        return originalInsertBefore.call(this, newNode, referenceNode);
-      };
-    })();
-  </script>
-  <script type="text/javascript">
-{% raw %}
-window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};
-{% endraw %}
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
