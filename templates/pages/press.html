@@ -17,20 +17,12 @@
 <div class="scrolling-loop-wrapper">
 <div class="scrolling-loop">
 <div class="scrolling-loop-item">
-<div class="scrolling-text-xl">
-                  Reviews
-                </div>
-<div class="scrolling-text-xl">
-                  Press
-                </div>
+<div class="scrolling-text-xl">Gabe</div>
+<div class="scrolling-text-xl">Clarke</div>
 </div>
 <div class="scrolling-loop-item">
-<div class="scrolling-text-xl">
-                  Quotes
-                </div>
-<div class="scrolling-text-xl">
-                  Media
-                </div>
+<div class="scrolling-text-xl">Gabe</div>
+<div class="scrolling-text-xl">Clarke</div>
 </div>
 </div>
 </div>
@@ -41,57 +33,121 @@
 <div class="margin-bottom-medium">
 <div class="content-wide">
 <div id="w-node-_705c1c4e-a393-29d6-d9a0-d6e861d35c07-b6eb91f0" class="text-align-center">
-<h4>Noted for his <em>"beautiful and lyrical sound"</em> and <em>"mature interpretation and fine control"</em>, tenor Gabe Clarke has received critical acclaim for his performances across Europe.</h4>
+<h4>Lauded as a true <em>'tenore di grazia'</em> with a bright timbre and flawless technical command, Dutch-American tenor Gabe Clarke is quickly gaining recognition on the European stage. From the intricate fioritura of Rossini and the soaring high-tessitura roles of Bellini to the refined, lyrical poise of his Mozart, critics have celebrated his <em>'starry promise,'</em> noting a rare combination of refined vocal elegance and a commanding, natural stage presence.</h4>
 </div>
 </div>
 </div>
 <div class="content">
-<div class="_2-columns-text">
-<div class="margin-bottom-medium">
-<h3 class="title-sm margin-bottom-small">Featured Reviews</h3>
+<style>
+  /* Clickable review: wrap a .review-quote in <a class="review-quote-link"> ... </a>
+     to link straight to the full review. Example:
+     <a class="review-quote-link" href="https://full-review-url" target="_blank" rel="noopener">
+       <blockquote class="review-quote"> ... </blockquote>
+     </a> */
+  a.review-quote-link { display: block; text-decoration: none; color: inherit; position: relative; }
+  a.review-quote-link .review-quote { transition: opacity .2s ease, transform .2s ease; }
+  a.review-quote-link:hover .review-quote { opacity: .7; transform: translateX(4px); }
+  a.review-quote-link .review-quote::after { content: "Read the full review →"; display: block; margin-top: .75rem; font-size: .8rem; font-style: normal; opacity: .55; }
+
+  .press-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 5rem; align-items: start; padding: 2.5rem 0; border-top: 1px solid rgba(38,38,45,0.12); }
+  .press-row:first-child { border-top: 0; }
+  .press-row-title { position: sticky; top: 7rem; order: -1; }
+  .press-row-title h3 { margin-bottom: .25rem; }
+  .press-row-reviews .review-quote { margin-bottom: 2rem; }
+  .press-row-reviews .review-quote:last-child { margin-bottom: 0; }
+  @media (max-width: 767px) {
+    .press-row { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.75rem 0; }
+    .press-row-title { position: static; order: -1; }
+  }
+</style>
+<div class="press-reviews">
+<div class="press-row">
+<div class="press-row-reviews">
 <blockquote class="review-quote">
-<p><em>"Beautiful and lyrical sound"</em></p>
-<p class="caption">— Place de l'Opéra</p>
+<p><em>"Both tenors were impressive in their way, with Gabe Clarke as a finely lyrical Cavalier Belfiore for whom Rossinian fioriture held no terrors."</em></p>
+<p class="caption">— R. Hugill</p>
 </blockquote>
 <blockquote class="review-quote">
-<p><em>"Mature interpretation and fine control"</em></p>
-<p class="caption">— Place de l'Opéra</p>
-</blockquote>
-</div>
-<div class="margin-bottom-medium">
-<h3 class="title-sm margin-bottom-small">Critical Acclaim</h3>
-<blockquote class="review-quote">
-<p><em>"A promising talent in the bel canto repertoire"</em></p>
-<p class="caption">— Opera Review</p>
+<p><em>"The famous big ensembles come off under Hartinger, and there's starry promise from Jane Burnell (Contessa di Folleville), Ihor Mostovoi (Don Profondo) and Gabe Clarke (Cavalier Belfiore)."</em></p>
+<p class="caption">— The Arts Desk</p>
 </blockquote>
 <blockquote class="review-quote">
-<p><em>"Versatility, technical skill, and unwavering commitment to the genre"</em></p>
-<p class="caption">— Classical Music Today</p>
+<p><em>"Corinna has another admirer, the vain Chevalier Belfiore… sung by Dutch-American tenor Gabe Clarke… his aria 'Nel suo divin sembiante' was brilliantly sung."</em></p>
+<p class="caption">— O. El Naggar</p>
 </blockquote>
 </div>
-<div class="margin-bottom-medium">
-<h3 class="title-sm margin-bottom-small">Performance Reviews</h3>
-<p>Glück hat das Staatstheater Oldenburg mit dem Solist:innenensemble, das ausnahmslos großartig singt und spielt...Gabe Clarke schwingt sich mühelos hinauf in höchste Tenor-Höhen und zeigt den Peter Zilko in all seiner Nervosität.</p>
-<p class="caption margin-top-small">— Review of "The Crash" at Oldenburgisches Staatstheater</p>
+<div class="press-row-title">
+<h3 class="title-sm">Rossini — <em>Il viaggio a Reims</em></h3>
+<p class="caption">Wexford Festival Opera</p>
 </div>
 </div>
+<div class="press-row">
+<div class="press-row-reviews">
+<blockquote class="review-quote">
+<p><em>"Den Arturo sang Gabe Clarke, ein wahrer 'tenore di grazia', mit hellem Timbre und überaus beweglicher Stimmführung, technisch perfekt und makellos bis hinauf zum hohen F… wo er mit seinen überaus bemerkenswerten, extremen Spitzentönen auftrumpfen konnte."</em></p>
+<p class="caption">— IOCO, Kultur im Netz</p>
+</blockquote>
+<blockquote class="review-quote">
+<p><em>"Gabe Clarke begeisterte mit seinem lyrischen Tenor, seiner wunderbaren Stimmführung und seiner von einer herrlichen Leichtigkeit geprägten Höhen als Arturo."</em></p>
+<p class="caption">— Sven Godenrath</p>
+</blockquote>
+<blockquote class="review-quote">
+<p><em>"…und besonders sang sich Gabe Clarke als Liebhaber Arturo mit seinem geschmeidigen Tenor in die Herzen des Publikums."</em></p>
+<p class="caption">— Elisabeth Richter</p>
+</blockquote>
+</div>
+<div class="press-row-title">
+<h3 class="title-sm">Bellini — <em>I Puritani</em></h3>
+<p class="caption">Hamburger Kammeroper</p>
 </div>
 </div>
-<div class="section overflow-hidden">
-<div class="work-heading">
-<div class="overflow-hidden">
-<h6 class="heading-h6">Press Kit</h6>
+<div class="press-row">
+<div class="press-row-reviews">
+<blockquote class="review-quote">
+<p><em>"Ihnen auf Augenhöhe gegenüber strahlt Tenor Gabe Clarke (beeindruckend seine Arie 'Un'aura amorosa') mit praller Bühnenpräsenz und flexibler Stimmführung."</em></p>
+<p class="caption">— Das Opernglas</p>
+</blockquote>
+<blockquote class="review-quote">
+<p><em>"Gabe Clarke begeistert durch seine feinsinnige Eleganz und seinen lyrisch geführten Tenor als Ferrando."</em></p>
+<p class="caption">— Sven Godenrath</p>
+</blockquote>
+</div>
+<div class="press-row-title">
+<h3 class="title-sm">Mozart — <em>Così fan tutte</em></h3>
+<p class="caption">Hamburger Kammeroper</p>
 </div>
 </div>
-<div class="content">
-<div class="_2-columns-text">
-<p>For media inquiries, interviews, or press materials, please contact:</p>
-<p><a href="mailto:info@gabeclarke.com" class="link-cta-with-underline w-inline-block">info@gabeclarke.com</a></p>
-<p class="caption margin-top-medium">Press kit download coming soon.</p>
+<div class="press-row">
+<div class="press-row-reviews">
+<blockquote class="review-quote">
+<p><em>"Glück hat das Staatstheater Oldenburg mit dem Solist:innenensemble, das ausnahmslos großartig singt und spielt… Gabe Clarke schwingt sich mühelos hinauf in höchste Tenor-Höhen und zeigt den Peter Zilko in all seiner Nervosität."</em></p>
+<p class="caption">— Die Deutsche Bühne</p>
+</blockquote>
+</div>
+<div class="press-row-title">
+<h3 class="title-sm">Hepplewhite — <em>The Crash</em></h3>
+<p class="caption">Oldenburgisches Staatstheater</p>
+</div>
+</div>
+<div class="press-row">
+<div class="press-row-reviews">
+<blockquote class="review-quote">
+<p><em>"Besonders spannend war die Entwicklung, die Gabe Clarke in der in höchste Tenorhöhen aufstrebenden Donizetti-Arie machte, die er kurzfristig einstudiert hatte. Er schien mehr und mehr Selbstbewusstsein zu gewinnen und seinem Klang mehr Präsenz verleihen zu können."</em></p>
+<p class="caption">— Dennis Schrimper</p>
+</blockquote>
+</div>
+<div class="press-row-title">
+<h3 class="title-sm">Masterclass — Rolando Villazón</h3>
+<p class="caption">Oldenburgisches Staatstheater</p>
+</div>
+</div>
 </div>
 </div>
 </div>
 </div>
 {% endblock %}
+
+
+
 
 

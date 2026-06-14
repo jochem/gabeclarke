@@ -1,53 +1,52 @@
-<div class="footer-1 bg-black" style="background-color: #26262d !important; color: white; padding: 3rem 2rem 2rem;">
-  <div class="line-holder on-top">
-    <div class="line" style="background-color: rgba(255,255,255,0.2);"></div>
-  </div>
-
-          <div class="w-layout-grid" style="grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 2rem;">
+<div class="footer-1 bg-black" style="background-color: #26262d !important; color: white; padding: 2.5rem 2rem 1.75rem;">
+          <style>
+            .footer-1 .footer-1-meta-grid { margin-top: 3rem; }
+            .footer-top { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; margin-bottom: 0; padding-top: 0; }
+            .footer-brand { display: inline-flex; align-items: center; gap: 1.15em; }
+            .footer-top .footer-wordmark { color: #fff; line-height: 1; margin: 0; text-transform: uppercase; letter-spacing: 0.02em; }
+            .footer-top .footer-tenor { color: rgba(255,255,255,0.6); text-transform: uppercase; letter-spacing: 0.02em; font-size: 1.2rem; font-style: normal; transform: translateY(0.06em); }
+            .footer-social { display: flex; flex-direction: column; gap: 0.8rem; text-align: right; }
+            .footer-social .row { display: flex; align-items: baseline; justify-content: flex-end; }
+            .footer-social .f-label { color: rgba(255,255,255,0.55); margin-right: 0.5em; }
+            @media (max-width: 767px) {
+              .footer-top { grid-template-columns: 1fr; gap: 1.75rem; align-items: start; }
+              .footer-social { text-align: left; align-items: flex-start; }
+              .footer-social .row { justify-content: flex-start; }
+            }
+          </style>
+          <div class="footer-top">
             <div>
-              <div class="margin-bottom-small" style="margin-bottom: 1rem;">
-                <div class="italic" style="color: rgba(255,255,255,0.7); margin-bottom: 0.5rem;">contact</div>
-                <a href="{{ asset_path }}contact/" class="link-cta-with-underline w-inline-block" style="color: white;">
-                  <div style="color: white;">Get in touch</div>
-                  <div class="cta-underline"></div>
-                </a>
+              <span class="footer-brand">
+                <span class="title-md footer-wordmark">Gabe Clarke</span>
+                <span class="footer-tenor">Tenor</span>
+              </span>
+            </div>
+            <div class="footer-social">
+              <div class="row">
+                <span class="italic f-label">instagram/</span>
+                <a href="https://www.instagram.com/gabe.clarke/" target="_blank" class="link-cta-with-underline w-inline-block" style="color: white;"><div style="color: white;">@gabe.clarke</div><div class="cta-underline"></div></a>
+              </div>
+              <div class="row">
+                <span class="italic f-label">twitter/</span>
+                <a href="https://twitter.com/gabeclarketenor" target="_blank" class="link-cta-with-underline w-inline-block" style="color: white;"><div style="color: white;">@gabeclarketenor</div><div class="cta-underline"></div></a>
+              </div>
+              <div class="row">
+                <span class="italic f-label">operabase/</span>
+                <a href="https://www.operabase.com/gabe-clarke-a2123782" target="_blank" class="link-cta-with-underline w-inline-block" style="color: white;"><div style="color: white;">Gabe Clarke</div><div class="cta-underline"></div></a>
+              </div>
+              <div class="row" style="margin-top: 0.3rem;">
+                <a href="{{ asset_path }}contact/" class="link-cta-with-underline w-inline-block" style="color: white;"><div style="color: white;">Get in touch →</div><div class="cta-underline"></div></a>
               </div>
             </div>
-
-    <div>
-      <div class="w-layout-grid contact-links-grid" style="grid-template-columns: 1fr; gap: 1rem;">
-        <div class="horizontal-align-center" style="justify-content: flex-start;">
-          <div class="italic" style="color: rgba(255,255,255,0.7); margin-right: 0.5em;">instagram/</div>
-          <a href="https://www.instagram.com/gabe.clarke/" target="_blank" class="link-cta-with-underline w-inline-block" style="color: white;">
-            <div style="color: white;">@gabe.clarke</div>
-            <div class="cta-underline"></div>
-          </a>
-        </div>
-        <div class="horizontal-align-center" style="justify-content: flex-start;">
-          <div class="italic" style="color: rgba(255,255,255,0.7); margin-right: 0.5em;">twitter/</div>
-          <a href="https://twitter.com/gabeclarketenor" target="_blank" class="link-cta-with-underline w-inline-block" style="color: white;">
-            <div style="color: white;">@gabeclarketenor</div>
-            <div class="cta-underline"></div>
-          </a>
-        </div>
-        <div class="horizontal-align-center" style="justify-content: flex-start;">
-          <div class="italic" style="color: rgba(255,255,255,0.7); margin-right: 0.5em;">operabase/</div>
-          <a href="https://www.operabase.com/gabe-clarke-a2123782" target="_blank" class="link-cta-with-underline w-inline-block" style="color: white;">
-            <div style="color: white;">Gabe Clarke</div>
-            <div class="cta-underline"></div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+          </div>
 
   <div class="w-layout-grid footer-1-meta-grid" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1.5rem;">
     <div class="w-layout-grid footer-1-meta-links" style="grid-template-columns: auto auto; gap: 2rem; align-items: center;">
-      <div style="color: rgba(255,255,255,0.7);">© 2024 Gabe Clarke</div>
+      <div style="color: rgba(255,255,255,0.7);">© 2026 Gabe Clarke</div>
       <div style="display: flex; gap: 1.5rem;">
-        <a href="{{ asset_path }}biography/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Biography</a>
-        <a href="{{ asset_path }}repertoire/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Schedule</a>
-        <a href="{{ asset_path }}works/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Media</a>
+        <a href="{{ asset_path }}about/" style="color: rgba(255,255,255,0.7); text-decoration: none;">About</a>
+        <a href="{{ asset_path }}media/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Media</a>
+        <a href="{{ asset_path }}performances/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Performances</a>
         <a href="{{ asset_path }}press/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Press</a>
       </div>
     </div>

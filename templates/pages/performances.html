@@ -1,0 +1,344 @@
+{% extends "base.html" %}
+
+{% block preloader %}
+  <div class="preloader">
+    <img src="https://cdn.prod.website-files.com/670903a26ae4eb4eb6eb91a2/670903a26ae4eb4eb6eb9218_loader_three-dots-white.svg" loading="lazy" alt="" class="preloader-image">
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="layout" style="opacity:0">
+<div class="_1st-section" id="top">
+<div class="w-layout-grid grid-8-columns">
+<div class="contact-title-wrap" id="w-node-_4c9eb25c-1994-2a85-6f35-35eb46e33dcb-b6eb9250">
+<h1 class="title-md margin-bottom-zero mobile-center">Performances</h1>
+</div>
+<div id="w-node-_4c9eb25c-1994-2a85-6f35-35eb46e33de7-b6eb9250">
+<div class="scrolling-loop-wrapper">
+<div class="scrolling-loop">
+<div class="scrolling-loop-item">
+<div class="scrolling-text-xl">Gabe</div>
+<div class="scrolling-text-xl">Clarke</div>
+</div>
+<div class="scrolling-loop-item">
+<div class="scrolling-text-xl">Gabe</div>
+<div class="scrolling-text-xl">Clarke</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="schedule-banner" role="img" aria-label="Il viaggio a Reims — Wexford Festival Opera" style="position: relative; margin: 1.5rem 0 0; height: 125vh; overflow: hidden;">
+<img id="schedule-banner-img" src="{{ asset_path }}media/il-viaggio-a-reims/viaggio-wfo-2025.webp" alt="" style="display: block; position: absolute; left: 0; top: 0; width: 100%; height: auto; will-change: transform;">
+</div>
+<style>
+@media (max-width: 991px) {
+  #schedule-banner { height: 60vh; }
+  #schedule-banner-img { height: 100%; object-fit: cover; object-position: center 60%; transform: none !important; }
+}
+</style>
+<script>
+(function () {
+  var wrap = document.getElementById('schedule-banner');
+  var img = document.getElementById('schedule-banner-img');
+  if (!wrap || !img) return;
+  function pan() {
+    if (window.innerWidth < 992) { img.style.transform = ''; return; }
+    var perf = document.getElementById('performances');
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var bannerH = wrap.offsetHeight;
+    var imgH = img.offsetHeight;
+    if (!imgH) return;
+    // bij performances (q=1) staat de onderkant van de foto op deze fractie van de bannerhoogte:
+    // lager getal = foto verder omhoog → Gabe (rechtsonder) volledig in beeld, witte hoeken eronder
+    var BOTTOM_FRAC = 0.6;
+    var tyEnd = Math.min(0, bannerH * BOTTOM_FRAC - imgH);
+    var tyStart = tyEnd * 0.5;              // start: foto vult de banner, hoeken komen pas bij het scrollen
+    var scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var end = perf ? (perf.getBoundingClientRect().top + scrollY) : bannerH;
+    var q = end > 0 ? scrollY / end : 0;    // begint meteen bij de eerste scroll
+    q = Math.max(0, Math.min(1, q));        // 1 = performances bereikt → onderkant volledig in beeld
+    var ty = tyStart + (tyEnd - tyStart) * q;
+    img.style.transform = 'translateY(' + ty.toFixed(1) + 'px)';
+  }
+  window.addEventListener('scroll', pan, { passive: true });
+  window.addEventListener('resize', pan);
+  if (img.complete) pan(); else img.addEventListener('load', pan);
+  pan();
+})();
+</script>
+<div class="section-rounded-wrap" style="margin-top: -22vh; background: transparent;">
+<div class="overflow-hidden">
+<div class="section-rounded bg-gray-1" id="performances">
+<style>
+  #performances { padding-top: 7em; padding-bottom: 7em; background-color: #f0f0f2; overflow: hidden; }
+  #performances .content { max-width: 1000px; }
+  #performances .performance-card { display: block; text-decoration: none; color: #26262d; padding-bottom: 2.5rem; margin-bottom: 2.5rem; border-bottom: 1px solid rgba(0,0,0,0.15); transition: opacity .25s ease; }
+  #performances .performance-card:last-of-type { border-bottom: none; margin-bottom: 0; }
+  #performances .performance-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 2.5rem; align-items: center; }
+  #performances .performance-card h3 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 .75rem; color: #26262d; }
+  #performances .performance-card .composer { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; opacity: .6; margin-bottom: .4rem; color: #26262d; }
+  #performances .performance-card .role { font-size: 1.25rem; font-weight: 600; color: #26262d; margin-bottom: .35rem; }
+  #performances .performance-card .venue { font-size: 1.1rem; color: #26262d; margin-bottom: .85rem; }
+  #performances .performance-card .credits { font-size: .9rem; line-height: 1.55; color: rgba(0,0,0,.5); }
+  @media (max-width: 767px) {
+    #performances { padding-top: 4em; padding-bottom: 4em; }
+    #performances .performance-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+    #performances .performance-card h3 { font-size: 1.8rem; }
+  }
+</style>
+<div class="w-layout-grid grid-8-columns">
+<div class="contact-title-wrap" id="w-node-_11aeb35a-8e78-ac03-0114-42e5347c039c-b6eb91ff">
+<h2 class="title-md margin-bottom-zero">Featured</h2>
+</div>
+<div class="scrolling-desktop" id="w-node-_11aeb35a-8e78-ac03-0114-42e5347c03ac-b6eb91ff">
+<div class="scrolling-loop-wrapper">
+<div class="scrolling-loop">
+<div class="scrolling-loop-item">
+<div class="scrolling-text-xl">Il viaggio a Reims</div>
+<div class="scrolling-text-xl">I Puritani</div>
+</div>
+<div class="scrolling-loop-item">
+<div class="scrolling-text-xl">La Sonnambula</div>
+<div class="scrolling-text-xl">Season</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content" style="padding: 2rem 2rem 0; grid-column: 1 / -1;">
+<div class="performance-card">
+<div class="performance-grid">
+<div><img src="{{ asset_path }}media/il-viaggio-a-reims/Rossini_Il%20viaggio%20a%20reims%201.png" alt="Il viaggio a Reims" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px;"/></div>
+<div>
+<div class="composer">Gioachino Rossini</div>
+<h3><em>Il viaggio a Reims</em></h3>
+<div class="role">Il cavalier Belfiore<br/><span style="font-weight: 400; font-size: .95rem; opacity: .75;">Il conte di Libenskof (cover)</span></div>
+<div class="venue">Wexford Festival Opera</div>
+<div class="credits">Conducted by Manuel Hartinger<br/>Directed by Rosetta Cucchi</div>
+</div>
+</div>
+</div>
+<div class="performance-card">
+<div class="performance-grid">
+<div><img src="{{ asset_path }}media/i-puritani/i-puritani-mockup.webp" alt="I Puritani poster" style="width: 100%; aspect-ratio: 4 / 5; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.04);"/></div>
+<div>
+<div class="composer">Vincenzo Bellini</div>
+<h3><em>I Puritani</em></h3>
+<div class="role">Lord Arturo Talbo</div>
+<div class="venue">Hamburger Kammeroper</div>
+<div class="credits">Rungholt Ensemble<br/>Conducted by Ettore Prandi</div>
+</div>
+</div>
+</div>
+<div class="performance-card">
+<div class="performance-grid">
+<div><img src="{{ asset_path }}media/la-sonnambula/sonnambula-poster.webp" alt="La Sonnambula poster" style="width: 100%; aspect-ratio: 4 / 5; object-fit: contain; border-radius: 6px; background: rgba(0,0,0,0.04);"/></div>
+<div>
+<div class="composer">Vincenzo Bellini</div>
+<h3><em>La Sonnambula</em></h3>
+<div class="role">Elvino</div>
+<div class="venue">Ópera de la vera — Ras de terra</div>
+<div class="credits">Orquesta Ensemblement y Coro de Extremadura<br/>Conducted by Juan Pablo Valencia Heredia<br/>Directed by William Costabile Cisco</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="past-performances" style="padding-top: 3rem; padding-bottom: 2rem;">
+<style>
+  #past-performances .section-heading { text-align: center; margin-bottom: 2.5rem; }
+  #past-performances .repertoire-columns { column-count: 2; column-gap: 3em; text-align: left; }
+  #past-performances .repertoire-section { margin-bottom: 1.75rem; break-inside: avoid; -webkit-column-break-inside: avoid; }
+  #past-performances .repertoire-composer { font-size: 1.05rem; font-weight: 600; opacity: .7; margin-bottom: .5rem; }
+  #past-performances .repertoire-section ul { margin: 0; padding-left: 1.2rem; }
+  #past-performances .repertoire-section li { font-size: 1.05rem; line-height: 1.6; margin: 0 0 .35rem; }
+  @media (max-width: 767px) { #past-performances .repertoire-columns { column-count: 1; } }
+</style>
+<div class="content">
+<div class="section-heading"><h2 class="title-md margin-bottom-zero">Past Performances</h2></div>
+<div class="repertoire-columns">
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2025–2026</h5>
+<ul>
+<li><em>Il viaggio a Reims</em> (Rossini) — Il cavalier Belfiore; Il conte di Libenskof (cover)</li>
+</ul>
+</div>
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2024–2025</h5>
+<ul>
+<li><em>La Sonnambula</em> (Bellini) — Elvino</li>
+<li><em>Così fan tutte</em> (Mozart) — Ferrando</li>
+<li><em>I Puritani</em> (Bellini) — Lord Arturo Talbo</li>
+</ul>
+</div>
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2023–2024</h5>
+<ul>
+<li><em>Flight</em> (Dove) — Bill</li>
+<li><em>Die Tote Stadt</em> (Korngold) — Victorin</li>
+<li><em>Gianni Schicchi</em> (Puccini) — Rinuccio (cover)</li>
+<li><em>The Crash</em> (Hepplewhite) — Peter Zilko</li>
+</ul>
+</div>
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2022–2023</h5>
+<ul>
+<li><em>l'Isola d'Alcina</em> (Gazzaniga) — James</li>
+<li><em>Pagliacci</em> (Leoncavallo) — Beppe</li>
+<li><em>Charlie's Tante</em> (Fischer) — Lord Stephen Spettigue</li>
+<li><em>Der Rosenkavalier</em> (R. Strauss) — Ein Sänger (cover)</li>
+<li><em>Don Pasquale</em> (Donizetti) — Ernesto (cover)</li>
+</ul>
+</div>
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2021–2022</h5>
+<ul>
+<li><em>Die Zauberflöte</em> (Mozart) — Tamino</li>
+<li><em>Così fan tutte</em> (Mozart) — Ferrando</li>
+<li><em>Cleopatra e Cesare</em> (Graun) — Tolomeo</li>
+<li><em>Postcard from Morocco</em> (Argento) — Man with old luggage</li>
+</ul>
+</div>
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2020–2021</h5>
+<ul>
+<li><em>Die Fledermaus</em> (J. Strauß) — Alfred</li>
+<li><em>Cendrillon</em> (Viardot) — Le Prince Charmant</li>
+<li><em>Don Giovanni</em> (Mozart) — Don Ottavio (cover)</li>
+</ul>
+</div>
+<div class="repertoire-section">
+<h5 class="repertoire-composer">2019–2020</h5>
+<ul>
+<li><em>The Turn of the Screw</em> (Britten) — Prologue/Quint</li>
+<li><em>Ariadne auf Naxos</em> (R. Strauss) — Brighella</li>
+<li><em>I Capuleti e i Montecchi</em> (Bellini) — Tebaldo</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="repertoire" style="padding-top: 3rem; padding-bottom: 4rem;">
+<style>
+  #repertoire .section-heading { text-align: center; margin-bottom: 2.5rem; }
+  #repertoire ._2-columns-text { column-count: 1; text-align: left; }
+  #repertoire .repertoire-columns { column-count: 2; column-gap: 3em; }
+  #repertoire .repertoire-subhead { font-size: 1.7rem; font-weight: 400; margin: 0 0 1.25rem; }
+  #repertoire .repertoire-section { margin-bottom: 1.5rem; break-inside: avoid; -webkit-column-break-inside: avoid; }
+  #repertoire .repertoire-composer { font-size: 1.05rem; font-weight: 600; opacity: .7; margin-bottom: .35rem; }
+  #repertoire .repertoire-section p { margin: 0 0 .25rem; font-size: 1.05rem; line-height: 1.5; }
+  #repertoire .rep-star { color: rgba(0,0,0,.45); }
+  #repertoire .repertoire-note { font-size: .92rem; font-style: italic; opacity: .55; margin: 1.75rem 0 0; }
+  @media (max-width: 767px) { #repertoire .repertoire-columns { column-count: 1; } }
+</style>
+<div class="content">
+<div class="section-heading"><h2 class="title-md margin-bottom-zero">Repertoire</h2></div>
+<div class="_2-columns-text">
+<div class="margin-bottom-medium">
+<h4 class="repertoire-subhead">Opera</h4>
+<div class="repertoire-columns">
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Dominick Argento</h5>
+<p><em>Postcard from Morocco</em> — Man with old luggage</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Vincenzo Bellini</h5>
+<p><em>I Capuleti e i Montecchi</em> — Tebaldo</p>
+<p><em>I Puritani</em> — Lord Arturo Talbo</p>
+<p><em>La Sonnambula</em> — Elvino</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Benjamin Britten</h5>
+<p><em>The Turn of the Screw</em> — Prologue/Quint</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Gaetano Donizetti</h5>
+<p><em>Don Pasquale</em> — Ernesto <sup class="rep-star">*</sup></p>
+<p><em>La fille du Régiment</em> — Tonio <sup class="rep-star">*</sup></p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Jonathan Dove</h5>
+<p><em>Flight</em> — Bill</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Giuseppe Gazzaniga</h5>
+<p><em>l'Isola d'Alcina</em> — James</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Carl Heinrich Graun</h5>
+<p><em>Cleopatra e Cesare</em> — Tolomeo</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Russell Hepplewhite</h5>
+<p><em>The Crash</em> — Peter Zilko</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Erich Wolfgang Korngold</h5>
+<p><em>Die Tote Stadt</em> — Victorin</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Ruggero Leoncavallo</h5>
+<p><em>Pagliacci</em> — Beppe</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Wolfgang Amadeus Mozart</h5>
+<p><em>Così fan tutte</em> — Ferrando</p>
+<p><em>Die Zauberflöte</em> — Tamino</p>
+<p><em>Don Giovanni</em> — Don Ottavio <sup class="rep-star">*</sup></p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Otto Nicolai</h5>
+<p><em>Die lustigen Weiber von Windsor</em> — Fenton <sup class="rep-star">*</sup></p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Giacomo Puccini</h5>
+<p><em>Gianni Schicchi</em> — Rinuccio <sup class="rep-star">*</sup></p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Gioachino Rossini</h5>
+<p><em>Il barbiere di Siviglia</em> — Il Conte d'Almaviva <sup class="rep-star">*</sup></p>
+<p><em>Il viaggio a Reims</em> — Il cavalier Belfiore; Il conte di Libenskof <sup class="rep-star">*</sup></p>
+<p><em>La Cenerentola</em> — Don Ramiro <sup class="rep-star">*</sup></p>
+<p><em>L'italiana in Algeri</em> — Lindoro <sup class="rep-star">*</sup></p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Johann Strauss</h5>
+<p><em>Die Fledermaus</em> — Alfred</p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Richard Strauss</h5>
+<p><em>Ariadne auf Naxos</em> — Brighella</p>
+<p><em>Der Rosenkavalier</em> — Ein Sänger <sup class="rep-star">*</sup></p>
+</div>
+<div class="repertoire-section margin-bottom-small">
+<h5 class="repertoire-composer">Pauline Viardot</h5>
+<p><em>Cendrillon</em> — Le Prince Charmant</p>
+</div>
+</div>
+</div>
+<div class="margin-top-medium">
+<h4 class="repertoire-subhead">Concert & Oratorio</h4>
+<div class="repertoire-section">
+<p>César Franck — <em>Les Sept Paroles du Christ</em> (tenor soloist)</p>
+<p>Mozart — <em>Mass in C minor</em> (tenor soloist)</p>
+<p>Mozart — <em>Requiem</em> (tenor soloist)</p>
+<p>Puccini — <em>Messa di Gloria</em> (tenor soloist)</p>
+<p>Rossini — <em>Petite Messe Solennelle</em> (tenor soloist)</p>
+<p>Saint-Saëns — <em>Oratorio de Noël</em> (tenor soloist)</p>
+</div>
+</div>
+</div>
+<p class="repertoire-note"><sup class="rep-star">*</sup> Not yet performed on stage</p>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
+
+
+

@@ -92,6 +92,17 @@ def inject_asset_path():
         return get_asset_path(request_path) + path
     return dict(asset_path=asset_path_func())
 
+SITE_URL = 'https://gabeclarke.com'
+
+@app.context_processor
+def inject_seo():
+    """Inject SEO helpers (canonical URL, site URL) into all templates."""
+    path = (request.path if request else '/') or '/'
+    if path == '/index.html':
+        path = '/'
+    canonical = SITE_URL.rstrip('/') + path
+    return dict(site_url=SITE_URL, canonical_url=canonical)
+
 @app.route('/')
 @app.route('/index.html')
 def index():
@@ -99,8 +110,8 @@ def index():
     meta = get_page_metadata('index.html')
     return render_template('index.html',
                          page_id=meta['page_id'],
-                         title=meta['title'],
-                         description=meta['description'],
+                         title='Gabe Clarke — Tenor',
+                         description="Dutch-American tenor Gabe Clarke (tenore di grazia), celebrated for his bel canto interpretations of Rossini, Bellini and Mozart on the European stage.",
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
@@ -138,42 +149,46 @@ def contact(num):
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
-@app.route('/biography/')
-@app.route('/biography')
-def biography():
-    """Biography page."""
+@app.route('/about/')
+@app.route('/about')
+def about_page():
+    """About page (formerly Biography)."""
     meta = get_page_metadata('about/about-2.html')
-    return render_template('biography.html',
+    return render_template('about.html',
                          page_id=meta['page_id'],
-                         title='Biography • Gabe Clarke',
+                         title='About • Gabe Clarke',
                          description=meta['description'],
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
 @app.route('/biography.html')
+@app.route('/biography/')
+@app.route('/biography')
 def biography_legacy():
-    """Legacy biography URL - redirect to new URL."""
+    """Legacy biography URLs - redirect to /about/."""
     from flask import redirect
-    return redirect('/biography/', code=301)
+    return redirect('/about/', code=301)
 
-@app.route('/repertoire/')
-@app.route('/repertoire')
-def repertoire():
-    """Repertoire page."""
+@app.route('/performances/')
+@app.route('/performances')
+def schedule():
+    """Performances & repertoire page."""
     meta = get_page_metadata('contact/contact-1.html')  # Use contact metadata as fallback
-    return render_template('pages/repertoire.html',
+    return render_template('pages/performances.html',
                          page_id=meta['page_id'],
-                         title='Repertoire • Gabe Clarke',
-                         description='Complete repertoire of roles and works performed by tenor Gabe Clarke.',
+                         title='Performances • Gabe Clarke',
+                         description='Performances and the complete repertoire of roles and works performed by tenor Gabe Clarke.',
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
-@app.route('/media/')
-@app.route('/media')
-def media_legacy():
-    """Legacy media URL - redirect to works."""
+@app.route('/repertoire/')
+@app.route('/repertoire')
+@app.route('/schedule/')
+@app.route('/schedule')
+def repertoire_legacy():
+    """Legacy repertoire/schedule URLs - redirect to /performances/."""
     from flask import redirect
-    return redirect('/works/', code=301)
+    return redirect('/performances/', code=301)
 
 @app.route('/press/')
 @app.route('/press')
@@ -190,15 +205,15 @@ def press():
 @app.route('/pages/<path:filename>')
 def pages(filename):
     """Pages like shop.html, works.html, press.html."""
-    # Redirect works.html to /works/
+    # Redirect works.html to /media/
     if filename == 'works.html':
         from flask import redirect
-        return redirect('/works/', code=301)
-    
-    # Redirect media.html to /works/ (media now integrated into works)
+        return redirect('/media/', code=301)
+
+    # Redirect media.html to /media/
     if filename == 'media.html':
         from flask import redirect
-        return redirect('/works/', code=301)
+        return redirect('/media/', code=301)
     
     # Redirect press.html to /press/
     if filename == 'press.html':
@@ -259,15 +274,17 @@ def project(filename):
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
+@app.route('/media/')
+@app.route('/media')
 @app.route('/works/')
 @app.route('/works')
 def works_index():
-    """Works listing page."""
-    meta = get_page_metadata('pages/works.html')
-    return render_template('pages/works.html',
+    """Media page (gallery, video, audio)."""
+    meta = get_page_metadata('pages/media.html')
+    return render_template('pages/media.html',
                          page_id=meta['page_id'],
-                         title='Works • Gabe Clarke',
-                         description='Selected works and performances by tenor Gabe Clarke.',
+                         title='Media • Gabe Clarke',
+                         description='Photos, video, and audio of tenor Gabe Clarke in performance.',
                          layout_opacity=meta['layout_opacity'],
                          preloader=meta['preloader'])
 
