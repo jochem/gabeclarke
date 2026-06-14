@@ -105,6 +105,10 @@ def extract_asset_paths(html_content, output_path=''):
                     src = tag.get(attr)
                     process_asset_path(src, output_path)
     
+    # Lightbox full-size images (custom data-full-image attribute on gallery items)
+    for tag in soup.find_all(attrs={'data-full-image': True}):
+        process_asset_path(tag.get('data-full-image'), output_path)
+
     # Responsive image candidates: srcset (img/source) and imagesrcset (preload links)
     for attr in ['srcset', 'imagesrcset']:
         for tag in soup.find_all(attrs={attr: True}):
