@@ -109,7 +109,7 @@
 <div class="content" style="padding: 2rem 2rem 0; grid-column: 1 / -1;">
 <div class="performance-card">
 <div class="performance-grid">
-<div><img src="{{ asset_path }}media/il-viaggio-a-reims/Rossini_Il%20viaggio%20a%20reims%201.png" alt="Il viaggio a Reims" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px;"/></div>
+<div><img src="{{ asset_path }}media/il-viaggio-a-reims/Rossini_Il%20viaggio%20a%20reims%201.webp" alt="Il viaggio a Reims" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 6px;"/></div>
 <div>
 <div class="composer">Gioachino Rossini</div>
 <h3><em>Il viaggio a Reims</em></h3>
@@ -151,12 +151,14 @@
 <div class="section" id="past-performances" style="padding-top: 3rem; padding-bottom: 2rem;">
 <style>
   #past-performances .section-heading { text-align: center; margin-bottom: 2.5rem; }
-  #past-performances .repertoire-columns { column-count: 2; column-gap: 3em; text-align: left; }
+  #past-performances .content { max-width: 1320px; }
+  #past-performances .repertoire-columns { column-count: 2; column-gap: 2.5em; text-align: left; }
+  #past-performances .repertoire-section li { white-space: nowrap; }
   #past-performances .repertoire-section { margin-bottom: 1.75rem; break-inside: avoid; -webkit-column-break-inside: avoid; }
   #past-performances .repertoire-composer { font-size: 1.05rem; font-weight: 600; opacity: .7; margin-bottom: .5rem; }
   #past-performances .repertoire-section ul { margin: 0; padding-left: 1.2rem; }
   #past-performances .repertoire-section li { font-size: 1.05rem; line-height: 1.6; margin: 0 0 .35rem; }
-  @media (max-width: 767px) { #past-performances .repertoire-columns { column-count: 1; } }
+  @media (max-width: 1299px) { #past-performances .repertoire-columns { column-count: 1; } }
 </style>
 <div class="content">
 <div class="section-heading"><h2 class="title-md margin-bottom-zero">Past Performances</h2></div>
@@ -225,15 +227,17 @@
 <div class="section" id="repertoire" style="padding-top: 3rem; padding-bottom: 4rem;">
 <style>
   #repertoire .section-heading { text-align: center; margin-bottom: 2.5rem; }
+  #repertoire .content { max-width: 1320px; }
   #repertoire ._2-columns-text { column-count: 1; text-align: left; }
-  #repertoire .repertoire-columns { column-count: 2; column-gap: 3em; }
+  #repertoire .repertoire-columns { column-count: 2; column-gap: 2.5em; }
+  #repertoire .repertoire-section p { white-space: nowrap; }
   #repertoire .repertoire-subhead { font-size: 1.7rem; font-weight: 400; margin: 0 0 1.25rem; }
   #repertoire .repertoire-section { margin-bottom: 1.5rem; break-inside: avoid; -webkit-column-break-inside: avoid; }
   #repertoire .repertoire-composer { font-size: 1.05rem; font-weight: 600; opacity: .7; margin-bottom: .35rem; }
   #repertoire .repertoire-section p { margin: 0 0 .25rem; font-size: 1.05rem; line-height: 1.5; }
   #repertoire .rep-star { color: rgba(0,0,0,.45); }
   #repertoire .repertoire-note { font-size: .92rem; font-style: italic; opacity: .55; margin: 1.75rem 0 0; }
-  @media (max-width: 767px) { #repertoire .repertoire-columns { column-count: 1; } }
+  @media (max-width: 1299px) { #repertoire .repertoire-columns { column-count: 1; } }
 </style>
 <div class="content">
 <div class="section-heading"><h2 class="title-md margin-bottom-zero">Repertoire</h2></div>
