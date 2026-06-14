@@ -2048,7 +2048,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: NewYork;
-  src: url("https://cdn.prod.website-files.com/670903a26ae4eb4eb6eb91a2/670903a26ae4eb4eb6eb92cc_NewYork.otf") format("opentype");
+  src: url("../fonts/NewYork.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -2056,7 +2056,7 @@ textarea.w-input, textarea.w-select {
 
 @font-face {
   font-family: Materialiconssharp;
-  src: url("https://cdn.prod.website-files.com/670903a26ae4eb4eb6eb91a2/670903a26ae4eb4eb6eb92d2_MaterialIconsSharp-Regular.otf") format("opentype");
+  src: url("../fonts/MaterialIconsSharp-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -3204,7 +3204,7 @@ label {
 .checkbox-switch {
   background-color: var(--gray-3);
   cursor: pointer;
-  background-image: url("https://cdn.prod.website-files.com/670903a26ae4eb4eb6eb91a2/670903a26ae4eb4eb6eb921c_checkbox-switch-handle.svg");
+  background-image: url("../img/checkbox-switch-handle.svg");
   background-position: 18%;
   background-repeat: no-repeat;
   background-size: 12px 12px;
@@ -3220,7 +3220,7 @@ label {
 
 .checkbox-switch.w--redirected-checked {
   background-color: var(--accent);
-  background-image: url("https://cdn.prod.website-files.com/670903a26ae4eb4eb6eb91a2/670903a26ae4eb4eb6eb921c_checkbox-switch-handle.svg");
+  background-image: url("../img/checkbox-switch-handle.svg");
   background-position: 82%;
   background-size: 12px 12px;
   border-style: none;

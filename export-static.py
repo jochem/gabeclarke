@@ -252,6 +252,24 @@ def export_static():
             except Exception as e:
                 print(f"    Error rendering {route_path}: {e}")
     
+    # Pull in assets referenced from within CSS files (e.g. @font-face url(...))
+    for css_rel in [a for a in list(referenced_assets) if a.lower().endswith('.css')]:
+        css_file = ASSETS_DIR / css_rel
+        if not css_file.exists():
+            continue
+        css_dir = css_file.parent
+        for u in re.findall(r'url\(\s*["\']?([^"\')]+)["\']?\s*\)', css_file.read_text(encoding='utf-8', errors='ignore')):
+            u = u.split('?')[0].split('#')[0]
+            if u.startswith(('http://', 'https://', 'data:', '//')):
+                continue
+            resolved = (css_dir / u).resolve()
+            try:
+                rel = resolved.relative_to(ASSETS_DIR.resolve())
+            except ValueError:
+                continue
+            if resolved.exists():
+                referenced_assets.add(str(rel))
+
     print(f"\nCopying {len(referenced_assets)} asset files...")
     for asset_path in referenced_assets:
         src = ASSETS_DIR / asset_path
