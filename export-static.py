@@ -188,57 +188,17 @@ def get_all_routes():
     routes = []
     
     with app.test_client() as client:
-        # Home/index
+        # Live pages only (Webflow demo pages moved to webflow-demo/)
         routes.append(('/', 'index.html'))
         routes.append(('/index.html', 'index.html'))
-        
-        # About pages
-        for num in [1, 2, 3]:
-            routes.append((f'/about/about-{num}.html', f'about/about-{num}.html'))
-        
-        # Contact pages
+        routes.append(('/about/', 'about/index.html'))
         routes.append(('/contact/', 'contact/index.html'))
         routes.append(('/contact', 'contact/index.html'))
-        for num in [1, 2, 3]:
-            routes.append((f'/contact/contact-{num}.html', f'contact/contact-{num}.html'))
-        
-        # About (formerly Biography)
-        routes.append(('/about/', 'about/index.html'))
-        
-        # Performances (formerly Schedule)
         routes.append(('/performances/', 'performances/index.html'))
-
-        # Press
         routes.append(('/press/', 'press/index.html'))
         routes.append(('/press', 'press/index.html'))
-
-        # Media (formerly Works)
         routes.append(('/media/', 'media/index.html'))
-        
-        # Work detail pages
-        for slug in ['the-crash', 'la-sonnambula', 'die-fledermaus', 'masterclass-rolando-villazon']:
-            routes.append((f'/works/{slug}/', f'works/{slug}/index.html'))
-            routes.append((f'/works/{slug}', f'works/{slug}/index.html'))
-        
-        # Shop
-        routes.append(('/pages/shop.html', 'pages/shop.html'))
-        
-        # Checkout
-        routes.append(('/checkout.html', 'checkout.html'))
-        
-        # Category pages
-        for cat in ['ceramic', 'figurines', 'mockups', 'prints']:
-            routes.append((f'/category/{cat}.html', f'category/{cat}.html'))
-        
-        # Product pages
-        for prod in ['fantastic-steel-cheese', 'generic-cotton-cheese', 'practical-metal-table', 
-                     'rustic-frozen-gloves', 'rustic-plastic-pizza']:
-            routes.append((f'/product/{prod}.html', f'product/{prod}.html'))
-        
-        # Project pages (legacy, but might be linked)
-        for proj in ['bring-back-to-colors', 'dreaming-about-light', 'essential-wear', 'say-exotique']:
-            routes.append((f'/project/{proj}.html', f'project/{proj}.html'))
-    
+
     return routes
 
 def export_static():

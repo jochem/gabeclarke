@@ -23,7 +23,7 @@ def load_page_metadata():
     
     metadata = {}
     for html_file in Path('.').rglob('*.html'):
-        if any(excluded in str(html_file) for excluded in ['ofelia-original', 'webflow-site', 'templates', '.git']):
+        if any(excluded in str(html_file) for excluded in ['ofelia-original', 'webflow-site', 'webflow-demo', 'templates', '.git']):
             continue
         try:
             with open(html_file, 'r', encoding='utf-8') as f:
