@@ -35,6 +35,19 @@
   justify-content: center;
   align-items: baseline;
 }
+/* Loading / placeholder state for gallery + video thumbnails */
+.media-grid .media-image-wrapper { position: relative; background-color: #e9e9ec; border-radius: 4px; overflow: hidden; }
+.media-grid .media-image-wrapper::after {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(100deg, rgba(255,255,255,0) 25%, rgba(255,255,255,0.55) 50%, rgba(255,255,255,0) 75%);
+  background-size: 220% 100%;
+  animation: media-shimmer 1.3s ease-in-out infinite;
+}
+.media-grid .media-image-wrapper.is-loaded::after { display: none; }
+.media-grid .media-image-wrapper > img { position: relative; z-index: 1; opacity: 0; transition: opacity .45s ease; }
+.media-grid .media-image-wrapper.is-loaded > img { opacity: 1; }
+@keyframes media-shimmer { 0% { background-position: 130% 0; } 100% { background-position: -130% 0; } }
+@media (prefers-reduced-motion: reduce) { .media-grid .media-image-wrapper::after { animation: none; } }
 </style>
 <div id="top" class="_1st-section overflow-hidden" style="position: relative;">
 <div class="w-layout-grid grid-8-columns">
@@ -273,11 +286,11 @@
 <div class="media-image-wrapper" data-production="Flight" data-full-image="{{ asset_path }}media/flight/Flight_10.webp">
 <img loading="lazy" decoding="async" src="{{ asset_path }}media/flight/Flight_10.webp" alt="Flight" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; cursor: pointer;"/>
 </div>
-<div class="media-image-wrapper" data-production="Flight" data-full-image="{{ asset_path }}media/flight/Flight_2.webp">
-<img loading="lazy" decoding="async" src="{{ asset_path }}media/flight/Flight_2.webp" alt="Flight" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; cursor: pointer;"/>
-</div>
 <div class="media-image-wrapper" data-production="Flight" data-full-image="{{ asset_path }}media/flight/Flight_4.webp">
 <img loading="lazy" decoding="async" src="{{ asset_path }}media/flight/Flight_4.webp" alt="Flight" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; cursor: pointer;"/>
+</div>
+<div class="media-image-wrapper" data-production="Flight" data-full-image="{{ asset_path }}media/flight/Flight_3.webp">
+<img loading="lazy" decoding="async" src="{{ asset_path }}media/flight/Flight_3.webp" alt="Flight" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; cursor: pointer;"/>
 </div>
 <div class="media-image-wrapper" data-production="Flight" data-full-image="{{ asset_path }}media/flight/Flight_5.webp">
 <img loading="lazy" decoding="async" src="{{ asset_path }}media/flight/Flight_5.webp" alt="Flight" style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 4px; cursor: pointer;"/>
@@ -413,6 +426,7 @@
 <button class="media-lightbox-nav media-lightbox-prev" aria-label="Previous">‹</button>
 <button class="media-lightbox-nav media-lightbox-next" aria-label="Next">›</button>
 <div class="media-lightbox-content">
+<div class="media-lightbox-spinner" id="media-lightbox-spinner" aria-hidden="true"></div>
 <img loading="lazy" decoding="async" id="media-lightbox-image" src="" alt="" class="media-lightbox-img" style="display: none;"/>
 <iframe loading="lazy" id="media-lightbox-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="media-lightbox-video" style="display: none; width: 90vw; max-width: 1200px; height: 67.5vw; max-height: 675px; border-radius: 4px;"></iframe>
 <div class="media-lightbox-info">
@@ -533,6 +547,24 @@
   max-height: 85vh;
 }
 
+.media-lightbox-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  border: 3px solid rgba(255,255,255,0.25);
+  border-top-color: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  animation: media-lb-spin 0.8s linear infinite;
+  display: none;
+  z-index: 3;
+}
+.media-lightbox-spinner.is-active { display: block; }
+@keyframes media-lb-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .media-lightbox-spinner { animation: none; } }
+
 .media-lightbox-info {
   margin-top: 1.5rem;
   text-align: center;
@@ -580,9 +612,21 @@
 (function() {
   const lightbox = document.getElementById('media-lightbox');
   const lightboxImage = document.getElementById('media-lightbox-image');
-  const lightboxVideo = document.getElementById('media-lightbox-video');
+  let lightboxVideo = document.getElementById('media-lightbox-video');
   const lightboxProduction = document.getElementById('media-lightbox-production');
   const lightboxCounter = document.getElementById('media-lightbox-counter');
+  const lightboxSpinner = document.getElementById('media-lightbox-spinner');
+  let videoSpinnerTimer = null;
+  function clearVideoSpinnerTimer() { if (videoSpinnerTimer) { clearTimeout(videoSpinnerTimer); videoSpinnerTimer = null; } }
+  function showSpinner() { if (lightboxSpinner) lightboxSpinner.classList.add('is-active'); }
+  function hideSpinner() { clearVideoSpinnerTimer(); if (lightboxSpinner) lightboxSpinner.classList.remove('is-active'); }
+  if (lightboxImage) {
+    lightboxImage.addEventListener('load', hideSpinner);
+    lightboxImage.addEventListener('error', hideSpinner);
+  }
+  // NB: an <iframe>'s 'load' event fires when the YouTube embed page loads, which is
+  // well before the video actually starts playing. So for video we keep the loading
+  // state visible for a short buffer window instead of hiding on iframe load.
   const closeBtn = document.querySelector('.media-lightbox-close');
   const prevBtn = document.querySelector('.media-lightbox-prev');
   const nextBtn = document.querySelector('.media-lightbox-next');
@@ -694,6 +738,7 @@
   function closeLightbox() {
     lightbox.style.display = 'none';
     document.body.style.overflow = '';
+    hideSpinner();
     // Stop video playback
     if (lightboxVideo.src) {
       lightboxVideo.src = '';
@@ -706,14 +751,26 @@
     
     const current = allMedia[currentIndex];
     
+    clearVideoSpinnerTimer();
+    showSpinner();
     if (current.type === 'video') {
       lightboxImage.style.display = 'none';
-      lightboxVideo.style.display = 'block';
+      // Rebuild the iframe from scratch each time. Reusing one iframe and toggling
+      // its src ('' -> url) doesn't reliably reload, so returning to a video we've
+      // already opened would leave the player blank. A fresh node always loads.
+      const fresh = lightboxVideo.cloneNode(false);
+      fresh.removeAttribute('src');
+      fresh.style.display = 'block';
+      lightboxVideo.replaceWith(fresh);
+      lightboxVideo = fresh;
       lightboxVideo.src = current.embedUrl;
+      // keep the spinner up through the YouTube buffer, then reveal the player
+      videoSpinnerTimer = setTimeout(hideSpinner, 2000);
     } else {
       lightboxVideo.style.display = 'none';
       lightboxImage.style.display = 'block';
       lightboxImage.src = current.src;
+      if (lightboxImage.complete && lightboxImage.naturalWidth > 0) hideSpinner();
     }
     
     lightboxProduction.textContent = current.production;
@@ -799,6 +856,25 @@
     } else if (e.key === 'ArrowLeft') {
       goToPrev();
     }
+  });
+})();
+</script>
+<script>
+// Thumbnail loading state: fade in on load, drop the shimmer; YouTube thumbs fall back maxres -> hq
+(function () {
+  document.querySelectorAll('.media-grid .media-image-wrapper > img').forEach(function (img) {
+    var wrap = img.parentElement;
+    function done() { wrap.classList.add('is-loaded'); }
+    function onError() {
+      var s = img.getAttribute('src') || '';
+      if (s.indexOf('img.youtube.com') !== -1 && s.indexOf('maxresdefault') !== -1) {
+        img.src = s.replace('maxresdefault', 'hqdefault'); // maxres often missing; hq always exists
+        return;
+      }
+      done(); // give up gracefully: keep the grey placeholder box
+    }
+    if (img.complete && img.naturalWidth > 0) { done(); }
+    else { img.addEventListener('load', done); img.addEventListener('error', onError); }
   });
 })();
 </script>
