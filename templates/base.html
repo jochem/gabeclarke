@@ -19,6 +19,15 @@
   <meta content="Gabe Clarke — Tenor" property="og:site_name">
   <meta content="{{ site_url }}/assets/670903a26ae4eb4eb6eb91a2/67091d590f6ec1db05a2dd71_jonathanballliet-6866%20copy-p-1080.jpg" property="og:image">
   <meta content="{{ site_url }}/assets/670903a26ae4eb4eb6eb91a2/67091d590f6ec1db05a2dd71_jonathanballliet-6866%20copy-p-1080.jpg" name="twitter:image">
+  <meta content="Gabe Clarke, Dutch-American tenor" property="og:image:alt">
+  <meta content="Gabe Clarke, Dutch-American tenor" name="twitter:image:alt">
+  <meta content="en_US" property="og:locale">
+  <meta content="@gabeclarketenor" name="twitter:site">
+  <meta content="@gabeclarketenor" name="twitter:creator">
+  <meta content="index, follow, max-image-preview:large, max-snippet:-1" name="robots">
+  <meta content="Gabe Clarke" name="author">
+  <meta content="Gabe Clarke, tenor, tenore di grazia, opera singer, bel canto, Rossini, Bellini, Mozart, Dutch-American tenor" name="keywords">
+  <meta content="#26262d" name="theme-color">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="{{ asset_path }}assets/670903a26ae4eb4eb6eb91a2/css/gabe-clarke.webflow.shared.6c3ea3014.css" rel="stylesheet" type="text/css">
@@ -29,6 +38,8 @@
   {% endif %}
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin>
+  <link href="https://cdn.prod.website-files.com" rel="dns-prefetch">
   <script src="{{ asset_path }}assets/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript">
 </script>
   <script type="text/javascript">
@@ -40,6 +51,7 @@ WebFont.load({  google: {    families: ["Cormorant Garamond:300,regular,italic,5
   <link href="{{ asset_path }}favicon.svg" rel="icon" type="image/svg+xml">
   <link href="{{ asset_path }}favicon-32.png" rel="icon" type="image/png" sizes="32x32">
   <link href="{{ asset_path }}apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  {% block head_preload %}{% endblock %}
   <style type="text/css">
 body
 {
@@ -95,6 +107,10 @@ window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal
     "description": "Dutch-American tenor (tenore di grazia) specializing in the bel canto repertoire of Rossini, Bellini and Mozart.",
     "image": "{{ site_url }}/assets/670903a26ae4eb4eb6eb91a2/67091d590f6ec1db05a2dd71_jonathanballliet-6866%20copy-p-1080.jpg",
     "worksFor": { "@type": "Organization", "name": "Opernagentur Winfried Hofinger", "url": "https://www.hofinger-agentur.de/" },
+    "hasOccupation": { "@type": "Occupation", "name": "Opera Singer (Tenor)" },
+    "nationality": "Dutch-American",
+    "knowsLanguage": ["en", "nl", "es", "de", "it", "fr"],
+    "alumniOf": { "@type": "EducationalOrganization", "name": "Dutch National Opera Academy" },
     "sameAs": [
       "https://www.instagram.com/gabe.clarke/",
       "https://twitter.com/gabeclarketenor",

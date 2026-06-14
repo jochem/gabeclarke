@@ -105,6 +105,14 @@ def extract_asset_paths(html_content, output_path=''):
                     src = tag.get(attr)
                     process_asset_path(src, output_path)
     
+    # Responsive image candidates: srcset (img/source) and imagesrcset (preload links)
+    for attr in ['srcset', 'imagesrcset']:
+        for tag in soup.find_all(attrs={attr: True}):
+            for candidate in tag.get(attr, '').split(','):
+                parts = candidate.split()
+                if parts:
+                    process_asset_path(parts[0], output_path)
+
     # Also check inline styles for background images
     for tag in soup.find_all(style=True):
         style = tag.get('style', '')
