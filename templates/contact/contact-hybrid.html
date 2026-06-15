@@ -17,9 +17,15 @@
 </div>
 <div id="w-node-_4d9cc38d-9091-b3c8-a4b3-a99d3f9cd0c3-b6eb91f5">
 <div class="form-block w-form">
-<form class="form-vertical" data-name="Email Form" id="email-form" method="get" name="email-form">
-<input class="text-field w-input" data-name="Name 2" id="name-2" maxlength="256" name="name-2" placeholder="Name" type="text"/><input class="text-field w-input" data-name="Email 2" id="email-2" maxlength="256" name="email-2" placeholder="Email" required="" type="email"/>
-<textarea class="text-field textarea w-input" data-name="Field 2" id="field-2" maxlength="5000" name="field-2" placeholder="Message">
+<form class="form-vertical" data-name="Email Form" id="email-form" method="post" name="email-form" action="https://api.web3forms.com/submit">
+<!-- Web3Forms access key (bound to Gabe's email at web3forms.com); submissions are emailed there -->
+<input type="hidden" name="access_key" value="4e3f7998-12ba-4c64-a26c-9751e759763c"/>
+<input type="hidden" name="subject" value="New message via gabeclarke.com"/>
+<input type="hidden" name="from_name" value="Gabe Clarke website"/>
+<!-- Honeypot: hidden from real users, bots fill it and get rejected -->
+<input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important" aria-hidden="true"/>
+<input class="text-field w-input" data-name="Name" id="name-2" maxlength="256" name="name" placeholder="Name" type="text" required=""/><input class="text-field w-input" data-name="Email" id="email-2" maxlength="256" name="email" placeholder="Email" required="" type="email"/>
+<textarea class="text-field textarea w-input" data-name="Message" id="field-2" maxlength="5000" name="message" placeholder="Message" required="">
 </textarea><input class="button w-button" data-wait="Please wait..." id="w-node-b430aa93-1016-89b8-0baa-6dbee8ec006c-b6eb91f5" type="submit" value="&amp; Send it"/>
 </form>
 <div class="success w-form-done">
@@ -185,5 +191,41 @@
 </div>
 </div>
 </div>
+<script>
+(function () {
+  var form = document.getElementById('email-form');
+  if (!form) return;
+  var block = form.closest('.w-form');
+  var doneEl = block ? block.querySelector('.w-form-done') : null;
+  var failEl = block ? block.querySelector('.w-form-fail') : null;
+  var submitBtn = form.querySelector('[type="submit"]');
+  var submitLabel = submitBtn ? submitBtn.value : '';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (failEl) failEl.style.display = 'none';
+    if (submitBtn) { submitBtn.value = submitBtn.getAttribute('data-wait') || 'Please wait...'; submitBtn.disabled = true; }
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+    .then(function (r) {
+      if (r.ok && r.data && r.data.success) {
+        form.style.display = 'none';
+        if (doneEl) doneEl.style.display = 'block';
+      } else {
+        if (failEl) failEl.style.display = 'block';
+      }
+    })
+    .catch(function () { if (failEl) failEl.style.display = 'block'; })
+    .finally(function () {
+      if (submitBtn) { submitBtn.value = submitLabel; submitBtn.disabled = false; }
+    });
+  });
+})();
+</script>
 {% endblock %}
 
